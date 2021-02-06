@@ -12,7 +12,9 @@ server.listen(port, () => {
   console.log(`🔥 BackEnd is running on: http://localhost:${port}`);
 }); 
 
-server.use((req, res, next) => {
-  console.log('✔️ Funcionou!!');
-  res.send('✔️ Funcionou!!');
-})
+// server.use((req, res, next) => {
+//   console.log('✔️ Funcionou!!');
+//   res.send('✔️ Funcionou!!');
+// })
+
+module.exports = server;
